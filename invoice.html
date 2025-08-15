@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invoice • SpareMids</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @media print {
+      .header, .topbar, footer {
+        display: none;
+      }
+      body {
+        background: white;
+        color: black;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="nav">
+      <div class="logo">
+        <div class="logo-badge">SM</div> SpareMids
+      </div>
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="order.html">Pesan Sekarang</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+    <div class="topbar">
+      <marquee behavior="scroll" direction="left" scrollamount="6">
+        🔥 Promo Agustus: Diskon 20% untuk semua oli! | Gratis ongkir untuk pembelian ≥ Rp500.000 | Garansi produk asli 100%.
+      </marquee>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div id="invoice-wrap" class="card">
+    <!-- Isi invoice akan di-generate oleh main.js -->
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    ©️ 2025 SpareMids • All rights reserved. | WA: 083142940023 • Email: lestarisiska490@gmail.com
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

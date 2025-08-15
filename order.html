@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pemesanan • SpareMids</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="nav">
+      <div class="logo">
+        <div class="logo-badge">SM</div> SpareMids
+      </div>
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="order.html" class="active">Pesan Sekarang</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+    <div class="topbar">
+      <marquee behavior="scroll" direction="left" scrollamount="6">
+        🔥 Promo Agustus: Diskon 20% untuk semua oli! | Gratis ongkir untuk pembelian ≥ Rp500.000 | Garansi produk asli 100%.
+      </marquee>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h2 style="margin-top:0">Form Pemesanan</h2>
+    <form id="order-form" class="form">
+      <div class="row">
+        <div>
+          <label>Nama Lengkap</label>
+          <input class="input" name="fullname" placeholder="Nama lengkap" required>
+        </div>
+        <div>
+          <label>No. HP</label>
+          <input class="input" name="phone" placeholder="08xxxxxxxxxx" required>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Email (opsional)</label>
+          <input class="input" type="email" name="email" placeholder="nama@email.com">
+        </div>
+        <div>
+          <label>Alamat Lengkap</label>
+          <input class="input" name="address" placeholder="Jalan, Kelurahan, Kecamatan, Kota" required>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Pilih Produk</label>
+          <select id="product" name="product" required></select>
+        </div>
+        <div>
+          <label>Jumlah</label>
+          <input id="qty" class="input" type="number" min="1" step="1" name="qty" value="1" required>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Pengiriman</label>
+          <select id="shipping" name="shipping"></select>
+        </div>
+        <div>
+          <label>Metode Pembayaran</label>
+          <select class="input" name="payment" required>
+            <option value="Transfer Bank">Transfer Bank</option>
+            <option value="VA / QRIS">VA / QRIS</option>
+            <option value="COD (Tunai)">COD (Tunai)</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label>Catatan</label>
+        <textarea class="input" name="note" rows="3" placeholder="Contoh: warna, ukuran, patokan lokasi, dsb."></textarea>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn btn-primary" type="submit">Checkout / Buat Pesanan</button>
+        <a class="btn" href="index.html">Kembali</a>
+      </div>
+    </form>
+    <div class="alert" style="margin-top:10px">
+      Tip: Kamu bisa prefill produk dari halaman Produk. Contoh: klik tombol <span class="badge">Beli</span> akan otomatis mengisi produk & jumlah.
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    ©️ 2025 SpareMids • All rights reserved. | WA: 083142940023 • Email: lestarisiska490@gmail.com
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
